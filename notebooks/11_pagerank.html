@@ -56,8 +56,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Discrete Fourier Transform" href="12_fft.html" />
-    <link rel="prev" title="Computing Eigenvalues" href="10_computing_eigenvalues.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -111,87 +109,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="01_linear_systems.html">
    Linear Systems of Equations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_LU_decomposition.html">
-   LU Decomposition
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="03_polynomial_interpolation.html">
-   Polynomial Interpolation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="04_spline_interpolation.html">
-   Natural Cubic Spline Interpolation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_finite_difference_method.html">
-   Finite Difference Method
-  </a>
- </li>
-</ul>
-<p class="caption collapsible-parent">
- <span class="caption-text">
-  Least Squares
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="06_least_squares_regression.html">
-   Fitting Models to Data
-  </a>
- </li>
-</ul>
-<p class="caption collapsible-parent">
- <span class="caption-text">
-  Eigenvalue Problems
- </span>
-</p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="07_pca.html">
-   Principal Component Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_deblurring_images.html">
-   Deblurring Images
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="09_computed_tomography.html">
-   Computed Tomography
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_computing_eigenvalues.html">
-   Computing Eigenvalues
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   PageRank
-  </a>
- </li>
-</ul>
-<p class="caption collapsible-parent">
- <span class="caption-text">
-  Discrete Fourier Transform
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="12_fft.html">
-   Discrete Fourier Transform
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="13_convolution.html">
-   Test page
   </a>
  </li>
 </ul>
@@ -504,12 +421,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/ipykernel_launcher.py:2: RuntimeWarning: invalid value encountered in true_divide
-  
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -518,12 +429,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;string&gt;:6: UserWarning: Warning: converting a masked element to nan.
-/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/numpy/core/_asarray.py:83: UserWarning: Warning: converting a masked element to nan.
-  return array(a, dtype, copy=False, order=order)
-</pre></div>
-</div>
-<img alt="../_images/11_pagerank_22_1.png" src="../_images/11_pagerank_22_1.png" />
+<img alt="../_images/11_pagerank_22_0.png" src="../_images/11_pagerank_22_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -533,8 +439,10 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan,
-       nan, nan, nan, nan, nan, nan, nan])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.02624827, 0.0776468 , 0.03919577, 0.0774385 , 0.05720481,
+       0.02761772, 0.02309462, 0.06165926, 0.02070866, 0.05916756,
+       0.05641676, 0.05741731, 0.05125157, 0.06768758, 0.04593453,
+       0.03228634, 0.07830402, 0.04689059, 0.07182021, 0.0220091 ])
 </pre></div>
 </div>
 </div>
@@ -546,26 +454,26 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{2: 0.04607285608037009,
- 5: 0.023738085681000935,
- 9: 0.03818378944927131,
- 10: 0.061692328088649676,
- 16: 0.04000502288120234,
- 13: 0.02682955762074988,
- 12: 0.04423394712399123,
- 8: 0.05403730994963834,
- 1: 0.04691900516518035,
- 6: 0.05504437858604488,
- 17: 0.06323206169809571,
- 7: 0.06300460720951244,
- 3: 0.05287999588969344,
- 4: 0.0637289435375597,
- 18: 0.040131550358131214,
- 0: 0.05854031611693398,
- 14: 0.05810591037049312,
- 19: 0.03821102555840612,
- 11: 0.07605516015961314,
- 15: 0.04935414847546217}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{5: 0.02624823690943208,
+ 13: 0.07764667749250007,
+ 4: 0.03919553578222582,
+ 0: 0.0774383993117179,
+ 12: 0.05720458621561172,
+ 7: 0.02761758622214013,
+ 8: 0.023094381261888477,
+ 15: 0.06165913810049048,
+ 19: 0.02070873339961496,
+ 9: 0.059167551492356474,
+ 14: 0.05641707920979706,
+ 2: 0.05741753406811175,
+ 16: 0.05125174529173531,
+ 10: 0.0676879063215599,
+ 17: 0.045935043483059705,
+ 11: 0.03228604736863921,
+ 3: 0.0783038248319356,
+ 18: 0.04689063063557263,
+ 1: 0.07182047991212027,
+ 6: 0.022008882689490278}
 </pre></div>
 </div>
 </div>
@@ -601,8 +509,6 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="10_computing_eigenvalues.html" title="previous page">Computing Eigenvalues</a>
-    <a class='right-next' id="next-link" href="12_fft.html" title="next page">Discrete Fourier Transform</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
