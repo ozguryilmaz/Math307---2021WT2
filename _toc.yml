@@ -1,5 +1,10 @@
 - file: index
 
+- part: Introduction to Python
+  chapters:
+  - file: notebooks/IntroductionToPythonPart1.ipynb
+  - file: notebooks/IntroductionToPythonPart2.ipynb
+  
 - part: Linear Systems
   chapters:
   - file: notebooks/01_linear_systems.ipynb
