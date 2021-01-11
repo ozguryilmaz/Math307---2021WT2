@@ -2,14 +2,16 @@
 
 ## Python 
 
-We will use Python, deployed in Jupyter notebooks, to do computations. No prior knowledge of Python is assumed. Detailed information on Python can be found at [Mathematical Python](https://www.math.ubc.ca/~pwalls/math-python/)
+We will use [Python](https://www.python.org), deployed in Jupyter notebooks, to do computations. 
 
-## Learning Goals
+* No prior knowledge of Python is assumed. Detailed information on Python can be found at [Mathematical Python](https://www.math.ubc.ca/~pwalls/math-python/). 
+* The UBC Jupyter hub [UBC syzygy](https://ubc.syzygy.ca) can be used to perform all computations required for the course. All students can sign in to UBC syzygy using their CWL. Once there, you can do computations with Python on your browser, without the need to install additional software.
+* In the notebooks linked on this page, clicking on the "rocket" on the upper right side of the page will take you to UBC szgygy. **Note that the instructors do not have access to your UC szgygy account, so for assignments, you still need to upload your file to canvas once you are done.** 
+* The notebooks that you need will posted on this page, which will be updated throughout the term -- check the TAB on the right side of the page. 
 
-* Summarize properties and constructions of matrix decompositions LU, QR and SVD
-* Perform matrix computations using mathematical software Python, SciPy and Jupyter
-* Compute solutions of large systems of linear equations using matrix decompositions
-* Compute least squares approximations of large linear systems using matrix decompositions
-* Compute eigenvalues of large matrices using iterative methods
-* Analyze digital signals using the discrete Fourier transform
-* Create mathematical models of real-world phenomenon such as computed tomography and digital signal processing
+Before the first assignment, please familiarize yourself with Python using the following two notebooks.
+
+Recently added:
+
+Introduction to Python - part 1
+Introduction to Python - part 2
