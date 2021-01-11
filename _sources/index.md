@@ -1,5 +1,9 @@
 # MATH 307 Applied Linear Algebra
 
+## Python 
+
+We will use Python, deployed in Jupyter notebooks, to do computations. No prior knowledge of Python is assumed. Detailed information on Python can be found at [Mathematical Python][https://www.math.ubc.ca/~pwalls/math-python/]
+
 ## Learning Goals
 
 * Summarize properties and constructions of matrix decompositions LU, QR and SVD
