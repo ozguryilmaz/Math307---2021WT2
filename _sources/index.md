@@ -13,8 +13,6 @@ Before the first assignment, please familiarize yourself with Python using the f
 
 Recently added:
 
-[Introduction to Python - part 0](notebooks/IntroFirstLecture.ipynb)
-
 [Introduction to Python - part 1](notebooks/IntroductionToPythonPart1.ipynb)
 
 [Introduction to Python - part 2](notebooks/IntroductionToPythonPart2.ipynb)
