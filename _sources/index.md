@@ -1,6 +1,10 @@
+
+
 # MATH 307 Applied Linear Algebra
 
 ## Python 
+
+HI OZGUR!!!!
 
 We will use [Python](https://www.python.org), deployed in Jupyter notebooks, to do computations. 
 
