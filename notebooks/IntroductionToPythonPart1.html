@@ -97,6 +97,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="#examples-you-should-try-to-solve-them-before-reading-the-solution">
+   Examples (You should try to solve them before reading the solution!)
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="IntroductionToPythonPart2.html">
    Introduction to Python - Part 2: NumPy
   </a>
@@ -219,20 +224,29 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#part-1-sympy">
-   Part 1: SymPy
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Introduction to Python - Part 1
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-1-sympy">
+     Part 1: SymPy
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#homework-from-last-time">
-   Homework from last time
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples-you-should-try-to-solve-them-before-reading-the-solution">
+   Examples (You should try to solve them before reading the solution!)
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#can-we-always-use-sympy">
-   Can we always use SymPy?
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#can-we-always-use-sympy">
+     Can we always use SymPy?
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -323,6 +337,7 @@ This small <em>Introduction</em> will show you how you can use Python on your co
 \[\begin{split}\displaystyle \left[\begin{matrix}1\\2\\4\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
+<p>A negative index returns the last entry, a common theme in python.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M</span><span class="o">.</span><span class="n">col_del</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -350,15 +365,15 @@ This small <em>Introduction</em> will show you how you can use Python on your co
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">9</span><span class="o">-</span><span class="mi">9</span><span class="n">f18eecd8a15</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">M</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">row_insert</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">Matrix</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">]))</span>
+<span class="nn">&lt;ipython-input-11-568d911ab75d&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">M</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">row_insert</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">Matrix</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">]))</span>
 
 <span class="ne">NameError</span>: name &#39;Matrix&#39; is not defined
 </pre></div>
 </div>
 </div>
 </div>
-<p>An error, such an error tells us a lot! Lets see what the problem is.
+<p>Such an error tells us a lot! Lets see what the problem is.
 It does not know the name ‘Matrix’ and it is clear why, we did not specify that Matrix belongs to the SymPy library.
 Lets try it again</p>
 <div class="cell docutils container">
@@ -388,15 +403,15 @@ Lets try it again</p>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ShapeError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">51</span><span class="o">-</span><span class="n">f1931db3b9ae</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nn">&lt;ipython-input-14-f1931db3b9ae&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">M</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">col_insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">sy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span> <span class="p">,</span><span class="mi">8</span><span class="p">]))</span>
 
-<span class="nn">/usr/lib/python3.8/site-packages/sympy/matrices/common.py</span> in <span class="ni">col_insert</span><span class="nt">(self, pos, other)</span>
-<span class="g g-Whitespace">    </span><span class="mi">239</span> 
-<span class="g g-Whitespace">    </span><span class="mi">240</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rows</span> <span class="o">!=</span> <span class="n">other</span><span class="o">.</span><span class="n">rows</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">241</span>             <span class="k">raise</span> <span class="n">ShapeError</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">242</span>                 <span class="s2">&quot;`self` and `other` must have the same number of rows.&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">243</span> 
+<span class="nn">/Applications/SageMath/local/lib/python3.7/site-packages/sympy/matrices/common.py</span> in <span class="ni">col_insert</span><span class="nt">(self, pos, other)</span>
+<span class="g g-Whitespace">    </span><span class="mi">214</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rows</span> <span class="o">!=</span> <span class="n">other</span><span class="o">.</span><span class="n">rows</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">215</span>             <span class="k">raise</span> <span class="n">ShapeError</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">216</span>                 <span class="s2">&quot;`self` and `other` must have the same number of rows.&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">217</span> 
+<span class="g g-Whitespace">    </span><span class="mi">218</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_eval_col_insert</span><span class="p">(</span><span class="n">pos</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
 
 <span class="ne">ShapeError</span>: `self` and `other` must have the same number of rows.
 </pre></div>
@@ -462,6 +477,10 @@ Lets try it again</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}-1 &amp; 1 &amp; -1\\1 &amp; 3 &amp; -2\\6 &amp; 2 &amp; 4\end{matrix}\right]\end{split}\]</div>
+</div>
 </div>
 <p>Scalar Multiplication</p>
 <div class="cell docutils container">
@@ -494,6 +513,10 @@ Lets try it again</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}10 &amp; 5 &amp; 8\\12 &amp; 8 &amp; 10\\30 &amp; 16 &amp; 26\end{matrix}\right]\end{split}\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -514,6 +537,7 @@ Lets try it again</p>
 </div>
 </div>
 </div>
+<p>In general, exponentiation in python is done with a ** rather than a ^.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">N</span><span class="o">*</span><span class="n">V</span>
@@ -639,13 +663,12 @@ Lets try it again</p>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Matrix([
  [1, 0, 0],
  [0, 1, 0],
- [0, 0, 1]]),
- (0, 1, 2))
+ [0, 0, 1]]), (0, 1, 2))
 </pre></div>
 </div>
 </div>
 </div>
-<p>Note that this command returns a Matrix and a tuple of indices of the pivot columns</p>
+<p>.rref is a function creating the reduced row echelon form of the matrix. Note that this command returns a Matrix and a tuple of indices of the pivot columns</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">M1</span><span class="p">,</span><span class="n">T1</span><span class="p">)</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
@@ -725,8 +748,7 @@ Lets try it again</p>
  [2],
  [1],
  [0],
- [0]]),
- Matrix([
+ [0]]), Matrix([
  [-1],
  [ 0],
  [-1],
@@ -745,8 +767,7 @@ Lets try it again</p>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Matrix([
  [ 2],
  [ 1],
- [-1]]),
- Matrix([
+ [-1]]), Matrix([
  [-3],
  [ 4],
  [ 1]])]
@@ -755,21 +776,24 @@ Lets try it again</p>
 </div>
 </div>
 </div>
-<div class="section" id="homework-from-last-time">
-<h2>Homework from last time<a class="headerlink" href="#homework-from-last-time" title="Permalink to this headline">¶</a></h2>
-<p>Last lecture we gave you some linear systems to solve at home. By now we have already seen how we can use the Sym.py library to do this with a computer.</p>
-<p>Why don’t you try this out now for yourself. I will be here to answer questions. At the end of this lecture I will present my solutions.</p>
-<p><strong>Homework Exercises</strong></p>
-<ol class="simple">
-<li><p>Find the general solution of the linear system:  $<span class="math notranslate nohighlight">\(
-\begin{array}{ r &#64;{{}={}} r  &gt;{{}}c&lt;{{}} r  &gt;{{}}c&lt;{{}}  r }
+</div>
+<div class="section" id="examples-you-should-try-to-solve-them-before-reading-the-solution">
+<h1>Examples (You should try to solve them before reading the solution!)<a class="headerlink" href="#examples-you-should-try-to-solve-them-before-reading-the-solution" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>**Solved examples**
+
+1. Find the general solution of the linear system:  $$
+\begin{array}{ r @{{}={}} r  &gt;{{}}c&lt;{{}} r  &gt;{{}}c&lt;{{}}  r }
 x_1 &amp;-&amp; 3x_2 &amp;+&amp; 4x_3 &amp;=&amp;  1 \\
 -2x_1 &amp;+&amp;  5x_2 &amp;-&amp; 7x_3 &amp;=&amp; 1 \\
 x_1 &amp;-&amp; 5x_2 &amp;+&amp; 8x_3 &amp;=&amp; 5 \\
 \end{array}
-\)</span>$</p></li>
-<li><p>Does the matrix equation <span class="math notranslate nohighlight">\(Ax = b\)</span> have a solution? If yes, write down the general solution of the system:<br />
-$<span class="math notranslate nohighlight">\( 
+$$
+
+
+2. Does the matrix equation $Ax = b$ have a solution? If yes, write down the general solution of the system:  
+$$ 
 A = 
 \begin{bmatrix}
 2 &amp; -8 &amp; 4 &amp; 2 \\
@@ -780,9 +804,9 @@ A =
 b = \begin{bmatrix}
 1 \\ 2 \\ 5 \\ 2
 \end{bmatrix}
-\)</span>$</p></li>
-<li><p>What about the equation <span class="math notranslate nohighlight">\(Bx = c\)</span>? If it has a solution, write it down in the most general form:<br />
-$<span class="math notranslate nohighlight">\(
+$$
+3. What about the equation $Bx = c$? If it has a solution, write it down in the most general form:    
+$$
 B = \begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; 1 \\
 1 &amp; 1 &amp; -1 &amp; -1 \\
@@ -792,9 +816,13 @@ B = \begin{bmatrix}
 c = \begin{bmatrix}
 3 \\ 1 \\ 0 \\ 1
 \end{bmatrix}
-\)</span>$</p></li>
-</ol>
-<p><em>Exercise 1</em></p>
+$$
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Solution to example 1</em></p>
+<p>First create the matrix for the system, and the column vector of constants.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M</span> <span class="o">=</span> <span class="n">sy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">7</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
@@ -825,6 +853,7 @@ c = \begin{bmatrix}
 \[\begin{split}\displaystyle \left[\begin{matrix}1\\1\\5\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
+<p>Now we can check if the matrix is invertible by computing the number of pivotal columns. If there are 3, then the 3x3 matrix must be invertible!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
@@ -841,6 +870,7 @@ c = \begin{bmatrix}
 </div>
 </div>
 </div>
+<p>So the matrix is invertible, we can double check with a determinant calculation. (Just for fun)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M</span><span class="o">.</span><span class="n">det</span><span class="p">()</span>
@@ -852,6 +882,7 @@ c = \begin{bmatrix}
 \[\displaystyle -2\]</div>
 </div>
 </div>
+<p>And finally, if we just multiply by the inverse of the matrix, we will see the unique solution.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span><span class="o">*</span><span class="n">a</span>
@@ -863,7 +894,8 @@ c = \begin{bmatrix}
 \[\begin{split}\displaystyle \left[\begin{matrix}-7\\-4\\-1\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
-<p><em>Exercise 2</em></p>
+<p><em>Solution to example 2</em></p>
+<p>Again, create the column and the matrix.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">sy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">],[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
@@ -883,6 +915,7 @@ c = \begin{bmatrix}
 \[\begin{split}\displaystyle \left[\begin{matrix}2 &amp; -8 &amp; 4 &amp; 2\\1 &amp; -3 &amp; 0 &amp; 2\\-1 &amp; 2 &amp; 2 &amp; -4\\-3 &amp; 11 &amp; -4 &amp; 2\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
+<p>Lets check the reduced row echelon form.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
@@ -900,6 +933,7 @@ c = \begin{bmatrix}
 </div>
 </div>
 </div>
+<p>Ah! So only 3 out of four pivotal column… the determinant better be 0.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">.</span><span class="n">det</span><span class="p">()</span>
@@ -911,11 +945,23 @@ c = \begin{bmatrix}
 \[\displaystyle 0\]</div>
 </div>
 </div>
+<p>Lets finish this problem by computing the augmented matrix, and the finding the reduced row echelon form.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Aug</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">col_insert</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Aug</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">col_insert</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Aug</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}2 &amp; -8 &amp; 4 &amp; 2 &amp; 1\\1 &amp; -3 &amp; 0 &amp; 2 &amp; 2\\-1 &amp; 2 &amp; 2 &amp; -4 &amp; 5\\-3 &amp; 11 &amp; -4 &amp; 2 &amp; 2\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -929,13 +975,14 @@ c = \begin{bmatrix}
  [1, 0, -6, 0, 0],
  [0, 1, -2, 0, 0],
  [0, 0,  0, 1, 0],
- [0, 0,  0, 0, 1]]),
- (0, 1, 3, 4))
+ [0, 0,  0, 0, 1]]), (0, 1, 3, 4))
 </pre></div>
 </div>
 </div>
 </div>
-<p><em>Exercise 3</em></p>
+<p>From the last row above, we see the solution is clearly inconsistent. No solution!</p>
+<p><em>Solution to example 3</em></p>
+<p>Lets begin as before.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="n">sy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
@@ -955,8 +1002,7 @@ c = \begin{bmatrix}
  [1, 0, 0, 0],
  [0, 1, 0, 0],
  [0, 0, 1, 1],
- [0, 0, 0, 0]]),
- (0, 1, 2))
+ [0, 0, 0, 0]]), (0, 1, 2))
 </pre></div>
 </div>
 </div>
@@ -974,9 +1020,20 @@ c = \begin{bmatrix}
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Bug</span><span class="o">=</span><span class="n">B</span><span class="o">.</span><span class="n">col_insert</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Bug</span><span class="o">=</span><span class="n">B</span><span class="o">.</span><span class="n">col_insert</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Bug</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}1 &amp; 1 &amp; 1 &amp; 1 &amp; 3\\1 &amp; 1 &amp; -1 &amp; -1 &amp; 1\\1 &amp; -1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 1 &amp; 1\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -987,15 +1044,18 @@ c = \begin{bmatrix}
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Matrix([
- [1, 0, 0, 1, 0],
- [0, 1, 0, 1, 0],
+ [1, 0, 0, 0, 1],
+ [0, 1, 0, 0, 1],
  [0, 0, 1, 1, 1],
- [0, 0, 0, 0, 0]]),
- (0, 1, 2))
+ [0, 0, 0, 0, 0]]), (0, 1, 2))
 </pre></div>
 </div>
 </div>
 </div>
+<p>This time, there aren’t any problems when the reduced row echelon form is computed, the final column is not pivotal.
+We can read off a solution by having the pivotal variables equal to the final column, and non pivotal equal to 0. This is the solution
+$<span class="math notranslate nohighlight">\(\begin{bmatrix} 1 \\ 1 \\ 1 \\ 0  \end{bmatrix}.\)</span>$</p>
+<p>To find the space of solutions, we can compute the nullspace of B.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">B</span><span class="o">.</span><span class="n">nullspace</span><span class="p">()</span>
@@ -1012,33 +1072,8 @@ c = \begin{bmatrix}
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">B</span><span class="o">.</span><span class="n">columnspace</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Matrix([
- [1],
- [1],
- [1],
- [0]]),
- Matrix([
- [ 1],
- [ 1],
- [-1],
- [ 0]]),
- Matrix([
- [ 1],
- [-1],
- [ 0],
- [ 1]])]
-</pre></div>
-</div>
-</div>
-</div>
-</div>
+<p>Now we have the whole solution space,
+$<span class="math notranslate nohighlight">\( \begin{bmatrix} 1 \\ 1 \\ 1 \\ 0 \end{bmatrix} + s \begin{bmatrix} 0 \\ 0 \\ -1 \\ 1 \end{bmatrix}, \quad s \in \mathbb{R}. \)</span>$</p>
 <div class="section" id="can-we-always-use-sympy">
 <h2>Can we always use SymPy?<a class="headerlink" href="#can-we-always-use-sympy" title="Permalink to this headline">¶</a></h2>
 <p>We see that we can already do a lot with SymPy. However, as was said in the beginning this library is for symbolic calculations, not numerical ones. For example</p>

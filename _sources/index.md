@@ -13,6 +13,10 @@ We will use [Python](https://www.python.org), deployed in Jupyter notebooks, to 
 
 Before the first assignment, please familiarize yourself with Python using the following two notebooks.
 
+
+Every Wednesday at 6pm PST Ethan White will run a 'Python office hour', to answer questions on any of the current week's python notebooks. 
+
+
 **Recently added:**
 
 [Introduction to Python - part 1](notebooks/IntroductionToPythonPart1.ipynb)
