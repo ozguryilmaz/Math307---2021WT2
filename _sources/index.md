@@ -22,3 +22,5 @@ Every Wednesday at 6pm PST Ethan White will run a 'Python office hour', to answe
 [Introduction to Python - part 1](notebooks/IntroductionToPythonPart1.ipynb)
 
 [Introduction to Python - part 2](notebooks/IntroductionToPythonPart2.ipynb)
+
+[Linear Systems of Equations](notebooks/01_linear_systems.ipynb)
