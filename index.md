@@ -19,7 +19,7 @@ Every Wednesday at 6pm PST Ethan White will run a 'Python office hour', to answe
 
 **Recently added:**
 
-[Introduction to Python - part 1](notebooks/IntroductionToPythonPart1.ipynb)
+[Introduction to Python - part 1](notebooks/IntroductionToPythonPart1.ipynb) with some basic examples  
 
 [Introduction to Python - part 2](notebooks/IntroductionToPythonPart2.ipynb)
 
