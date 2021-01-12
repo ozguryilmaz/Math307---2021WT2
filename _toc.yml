@@ -2,7 +2,7 @@
 
 - part: Introduction to Python
   chapters:
- # - file: notebooks/IntroductionToPythonPart1.ipynb
+  - file: notebooks/IntroductionToPythonPart1.ipynb
   - file: notebooks/IntroductionToPythonPart2.ipynb
   
 
