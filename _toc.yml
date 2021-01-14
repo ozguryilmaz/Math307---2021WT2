@@ -1,6 +1,6 @@
 - file: index
 
-- part: Introduction to Python
+- part: Introduction to Python - Two parts
   chapters:
   - file: notebooks/IntroductionToPythonPart1.ipynb
   - file: notebooks/IntroductionToPythonPart2.ipynb
