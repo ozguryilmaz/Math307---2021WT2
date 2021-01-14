@@ -31,3 +31,7 @@
 #  chapters:
 #  - file: notebooks/12_fft.ipynb
 #  - file: notebooks/13_convolution.ipynb
+
+
+- part: Assignments
+    - file: release/Assignment0/Assignment0.ipynb
